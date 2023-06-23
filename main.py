@@ -11,7 +11,7 @@ app = Flask(__name__)
 api = Api(app)        
 CORS(app)
 port = int(os.environ.get("RAILWAY_PORT", 5000))
-app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:@127.0.0.1:3306/bigprojek_6b"
+app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:EevE6yqe64oSWgOkc8tN@containers-us-west-1.railway.app:5985/railway"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'WhatEverYouWant'
 app.config['MAIL_SERVER'] = 'smtp.gmail.com' 
@@ -278,4 +278,4 @@ class EditUser(Resource):
         return {'message' : 'Update User Suksess'}, 200
 
 if __name__ == '__main__':
-    app.run(ssl_context='adhoc', debug=True)
+    app.run(host='0.0.0.0' , debug=True)
