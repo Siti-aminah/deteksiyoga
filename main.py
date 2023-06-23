@@ -12,7 +12,6 @@ from flask_mail import Mail, Message
 app = Flask(__name__) 
 api = Api(app)        
 CORS(app)
-port = int(os.environ.get("RAILWAY_PORT", 5000))
 app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:EevE6yqe64oSWgOkc8tN@containers-us-west-1.railway.app:5985/railway"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'WhatEverYouWant'
