@@ -1,3 +1,5 @@
+import pymysql
+pymysql.install_as_MySQLdb()
 from flask import Flask, make_response, jsonify, render_template, session
 from flask_restx import Resource, Api, reqparse
 from flask_sqlalchemy import SQLAlchemy
