@@ -1,11 +1,11 @@
 flask
-flask_restx
-flask_sqlalchemy
+flask-restx
+flask-sqlalchemy
 flask_cors
 werkzeug
 datetime
 pyjwt
-flask_mail
+flask-mail
 PyJWT
 pyopenssl==23.1.1
 pymysql==1.0.3
