@@ -280,4 +280,4 @@ class EditUser(Resource):
         return {'message' : 'Update User Suksess'}, 200
 
 if __name__ == '__main__':
-    app.run(ssl_context='adhoc', debug=True)
+    app.run(host='192.168.167.151', debug=True)
