@@ -16,7 +16,7 @@ CORS(app)
 app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:ky4Nh6Qnfxx99tcWViHn@containers-us-west-46.railway.app:7828/railway"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'WhatEverYouWant'
-app.config['MAIL_SERVER'] = 'smtp.gmail.com' 
+app.config['MAIL_SERVER'] = 'fikanurhasari031@gmail.com' 
 app.config['MAIL_PORT'] = 465
 app.config['MAIL_USE_SSL'] = True
 app.config['MAIL_USERNAME'] = os.environ.get("MAIL_USERNAME")
