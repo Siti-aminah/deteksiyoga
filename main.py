@@ -13,7 +13,7 @@ app = Flask(__name__)
 api = Api(app)        
 CORS(app)
 
-app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:ky4Nh6Qnfxx99tcWViHn@containers-us-west-46.railway.app:7828/railway"
+app.config["SQLALCHEMY_DATABASE_URI"] = "mysql -hcontainers-us-west-46.railway.app -uroot -pky4Nh6Qnfxx99tcWViHn --port 7828 --protocol=TCP railway"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'WhatEverYouWant'
 app.config['MAIL_SERVER'] = 'fikanurhasari031@gmail.com' 
